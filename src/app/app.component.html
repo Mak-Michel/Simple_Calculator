@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Calculator</title>
+  <link rel="stylesheet" href="app.component.css">
+</head>
+<body>
+  <div class="container">
+    <div class="calculator">
+      <div id="screen-input"> {{show}} </div>
+      <div id="screen-output">{{result}}</div>
+      <button type="button" (click)="pressOP('%')">%</button>
+      <button type="button" (click)="allClear()">CE</button>
+      <button type="button" (click)="allClear()">C</button>
+      <button type="button" (click)="del()">⌫</button>
+      <button type="button" (click)="pressOP('N')" class="I">1/x</button>
+      <button type="button" (click)="pressOP('S')" class="I">x<sup>2</sup></button>
+      <button type="button" (click)="pressOP('R')" class="I"><sup>2</sup>√x</button>
+      <button type="button" (click)="pressOP('/')">÷</button>
+      <button type="button" (click)="pressN('7')" class="W">7</button>
+      <button type="button" (click)="pressN('8')" class="W">8</button>
+      <button type="button" (click)="pressN('9')" class="W">9</button>
+      <button type="button" (click)="pressOP('*')">x</button>
+      <button type="button" (click)="pressN('4')" class="W">4</button>
+      <button type="button" (click)="pressN('5')" class="W">5</button>
+      <button type="button" (click)="pressN('6')" class="W">6</button>
+      <button type="button" (click)="pressOP('-')">-</button>
+      <button type="button" (click)="pressN('1')" class="W">1</button>
+      <button type="button" (click)="pressN('2')" class="W">2</button>
+      <button type="button" (click)="pressN('3')" class="W">3</button>
+      <button type="button" (click)="pressOP('+')">+</button>
+      <button type="button" (click)="pressOP('V')" class="W">+/-</button>
+      <button type="button" (click)="pressN('0')" class="W">0</button>
+      <button type="button" (click)="pressN('.')" class="W">.</button>
+      <button type="button" (click)="getAnswer()" class="E">=</button>
+    </div>
+  </div>
+</body>
+</html>
