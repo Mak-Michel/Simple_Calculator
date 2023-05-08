@@ -28,6 +28,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Note
 To be able to use the application, first you have to get the:
-1) .angular
-2) node_modules
-files 
+1) .angular folder
+2) node_modules folder
+
